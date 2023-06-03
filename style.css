@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/Background.svg);
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: black;
+}
+
+.logotipo img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 300px;
+  height: 150px;
+
+  padding: 24px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  gap: 16px;
+
+  padding: 24px 0;
+}
+
+ul li a {
+  padding: 10px 16px;
+
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none;
+  font-weight: 500;
+
+  transition: background 0.2s;
+}
+
+ul li a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1.5px solid black;
+}
