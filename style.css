@@ -5,31 +5,60 @@
 }
 
 body {
-  background-image: url(./assets/Background.jpg);
+  background-image: url(./assets/bg-efumkemi.jpg);
 
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-body * {
   font-family: "Inter", sans-serif;
   color: black;
+}
+
+.logotipo img {
+  width: 350px;
+  height: 175px;
+
+  padding: 24px;
+  margin: auto;
+}
+
+.memory h1 {
+  display: flex;
+  justify-content: center;
+
+  font-size: 2rem;
+  color: black;
+}
+
+.memory small {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: black;
+}
+
+.memory p {
+  font-size: 20px;
+  text-align: center;
+  
+  padding: 10px;
 }
 
 ul {
   list-style: none;
   text-transform: uppercase;
-  position: absolute;
-  top: 10px;
-  right: 20px;
 
   display: flex;
-  justify-content: center;
+
+  position: absolute;
+  top: -5px;
+  right: 50px;
 
   gap: 10px;
 
   padding: 24px 0;
+  margin: 30px;
 }
 
 ul li a {
@@ -53,58 +82,87 @@ ul li a:hover {
   border: 1.5px solid black;
 }
 
-aside {
-  grid-area: profile;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+@media (max-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    list-style: none;
+
+    display: flex;
+    
+    align-items: center;
+
+    position: inherit;
+
+    margin-top: 20px;
+    padding: 0;
+
+    gap: 20px;
+  }
+
+  .memory h1 {
+    text-align: center;
+
+    margin-top: 20px;
+    
+  }
+
+  .memory p {
+    margin: 20px;
+    padding: 0;
+  }
 }
 
-nav {
-  padding: 64px;
-  grid-area: timeline;
+@media (max-width: 856px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-  animation: entering 0.9s;
+  ul {
+    list-style: none;
+
+    display: flex;
+    
+    align-items: center;
+
+    position: inherit;
+
+    margin-top: 20px;
+    padding: 0;
+
+    gap: 2px;
+  }
+
+  .memory h1 {
+    text-align: center;
+
+    margin-top: 20px;
+    
+  }
+
+  .memory p {
+    margin: 20px;
+    padding: 0;
+  }
 }
 
-.logotipo img {
-  position: absolute;
-  top: -10px;
+@media (max-width: 764px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-  width: 350px;
-  height: 175px;
-
-  padding: 24px;
-  margin: auto;
-}
-
-.memory h1 {
-  display: flex;
-  justify-content: center;
-
-  font-size: 2rem;
-  color: black;
-
-  padding-top: 200px;
-}
-
-.memory small {
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-  color: black;
-
-  padding-top: 20px;
-}
-
-.memory p {
-  font-size: 20px;
-}
-
-@media (max-width: 768px) {
   ul {
     list-style: none;
 
@@ -112,8 +170,60 @@ nav {
     flex-direction: column;
     align-items: center;
 
-    gap: 30px;
+    position: inherit;
 
-    padding: 24px;
+    margin-top: 20px;
+    padding: 0;
+
+    gap: 25px;
+  }
+
+  .memory h1 {
+    text-align: center;
+
+    margin-top: 20px;
+    
+  }
+
+  .memory p {
+    margin: 20px;
+    padding: 0;
+  }
+}
+
+
+@media (max-width: 425px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: inherit;
+
+    margin-top: 20px;
+    padding: 0;
+
+    gap: 25px;
+  }
+
+  .memory h1 {
+    text-align: center;
+
+    margin-top: 20px;
+    
+  }
+
+  .memory p {
+    margin: 20px;
+    padding: 0;
   }
 }
